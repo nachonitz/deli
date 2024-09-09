@@ -3,7 +3,7 @@ import * as Yup from "yup";
 import { CreateUserDto } from "../api/models/user";
 import { yupResolver } from "@hookform/resolvers/yup";
 import InputField from "../components/shared/inputField";
-import Page from "../components/shared/Page";
+import Page from "../components/shared/page";
 import { useContext, useState } from "react";
 import { UserContext } from "../context/UserContext";
 

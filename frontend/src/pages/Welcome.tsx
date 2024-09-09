@@ -1,4 +1,4 @@
-import Page from "../components/shared/Page";
+import Page from "../components/shared/page";
 
 const Welcome = () => {
   return (
