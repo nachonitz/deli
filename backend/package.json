@@ -7,8 +7,7 @@
     "start": "ts-node src/server.ts",
     "dev": "nodemon --watch src --exec ts-node src/server.ts",
     "test": "jest",
-    "build": "tsc",
-    "vercel-build": "echo hello"
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",
