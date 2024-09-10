@@ -6,6 +6,7 @@ import InputField from "../components/shared/inputField";
 import Page from "../components/shared/page";
 import { useContext, useState } from "react";
 import { UserContext } from "../context/UserContext";
+import RegisterButton from "../components/pages/register/registerButton";
 
 const Register = () => {
   const [creatingUser, setCreatingUser] = useState<boolean>(false);
@@ -94,13 +95,7 @@ const Register = () => {
               register={register("password")}
             />
 
-            <button
-              className="w-full bg-primary text-white p-2 rounded mb-2"
-              type="submit"
-              disabled={creatingUser}
-            >
-              CREAR CUENTA
-            </button>
+            <RegisterButton disabled={creatingUser} />
 
             {error && <span className="text-red-500">{error}</span>}
           </form>

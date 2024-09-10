@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { UserContext } from "../../context/UserContext";
+import PrimaryButton from "./primaryButton";
 
 const Header = () => {
   const { isLoggedIn, logout } = useContext(UserContext);
@@ -9,12 +10,7 @@ const Header = () => {
         <div className="w-full flex justify-between items-center">
           <img className="h-[24px]" src="deli_orange.png" alt="logo" />
           {isLoggedIn && (
-            <button
-              className="bg-primary text-white p-3 rounded"
-              onClick={logout}
-            >
-              CERRAR SESIÓN
-            </button>
+            <PrimaryButton text="CERRAR SESIÓN" onClick={logout} />
           )}
         </div>
       </div>
