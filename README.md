@@ -1,6 +1,8 @@
 # Deli
 El sitio se encuentra hosteado en https://fudo-deli.vercel.app/ y apunta al servidor hosteado en la plataforma `render` por lo que inicialmente el servidor puede estar dormido.
 
+**Atención:** El servidor utliza el plan gratuito de mailgun para el envío de emails, por lo que si se registra en la aplicación con un email que no fue configurado en mailgun previamente, el email fallará y por lo tanto no se podrá registrar el usuario.
+
 ## Instructivo para correr el proyecto localmente
 
 ### Backend
