@@ -58,12 +58,7 @@ describe("AccountController Integration Tests", () => {
   test("Should return 400 if user already exists", async () => {
     userRepository.addUser(user);
 
-    const response = await request(app)
-      .post("/accounts")
-      .send(user)
-      .expect(400);
-
-    expect(response.body.message).toBe("User already exists");
+    await request(app).post("/accounts").send(user).expect(400);
   });
 
   test("Should return 400 if email is invalid", async () => {

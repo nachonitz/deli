@@ -39,12 +39,12 @@ export class AccountController {
       const token = await this.accountService.createUser(newUser);
 
       if (!token) {
-        return res.status(400).json({ message: "User already exists" });
+        return res.status(400).json({ message: "El email ya está en uso" });
       }
 
       return res.status(201).json({ token });
     } catch (error) {
-      res.status(500).json({ message: "Error creating user" });
+      res.status(500).json({ message: "Error al crear usuario" });
     }
   };
 }
