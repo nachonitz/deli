@@ -1,5 +1,5 @@
 # Deli
-El sitio se encuentra hosteado en https://fudo-deli.vercel.app/
+El sitio se encuentra hosteado en https://fudo-deli.vercel.app/ y apunta al servidor hosteado en la plataforma `render` por lo que inicialmente el servidor puede estar dormido.
 
 ## Instructivo para correr el proyecto localmente
 
