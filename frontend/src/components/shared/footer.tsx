@@ -2,9 +2,9 @@ import SocialMedia from "./socialMedia";
 
 const Footer = () => {
   return (
-    <div className="bg-secondary w-full flex justify-center shadow-md">
+    <div className="bg-secondary w-full flex justify-center h-footer">
       <div className="flex items-center w-[90%] max-w-page">
-        <div className="text-white w-full py-7 flex flex-col gap-4 sm:gap-0 sm:flex-row sm:justify-between sm:items-center">
+        <div className="text-white w-full flex flex-col gap-4 sm:gap-0 sm:flex-row sm:justify-between sm:items-center">
           <div>
             <img className="h-[24px]" src="deli_white.png" />
           </div>

@@ -10,6 +10,10 @@ export default {
       maxWidth: {
         page: "1120px",
       },
+      spacing: {
+        header: "64px",
+        footer: "110px",
+      },
     },
   },
   plugins: [],
